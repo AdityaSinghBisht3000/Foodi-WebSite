@@ -5,9 +5,11 @@ const Footer = () => {
   const { isDarkMode } = useTheme();
   return (
     <div>
-      <footer className={`footer xl:px-24 py-10 px-4 text-base-content ${
+      <footer
+        className={`footer xl:px-24 py-10 px-4 text-base-content ${
           isDarkMode ? "dark" : "" // Apply dark mode class
-        }`}>
+        }`}
+      >
         <aside>
           <img src="/logo.png" alt="" />
           <p className="my-3 md:w-40">
@@ -15,7 +17,7 @@ const Footer = () => {
           </p>
         </aside>
         <nav>
-          <header className="footer-title text-black">Useful links</header>
+          <header className="text-black footer-title">Useful links</header>
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Events</a>
           <a className="link link-hover">Blogs</a>
@@ -30,17 +32,19 @@ const Footer = () => {
         </nav>
         <nav>
           <header className="footer-title">Contact Us</header>
-          <a className="link link-hover">example@email.com</a>
-          <a className="link link-hover">+64 958 248 966</a>
+          <a className="link link-hover">adityasinghbisht1000001@gmail.com</a>
+          <a className="link link-hover">+91 8193030007</a>
           <a className="link link-hover">Social media</a>
         </nav>
       </footer>
-        <hr />
-      <footer  className={`footer items-center xl:px-24 px-4 py-4 mt-2 ${
+      <hr />
+      <footer
+        className={`footer items-center xl:px-24 px-4 py-4 mt-2 ${
           isDarkMode ? "dark" : "" // Apply dark mode class
-        }`}>
+        }`}
+      >
         <aside className="items-center grid-flow-col">
-          <p>Copyright © 2023 - All right reserved</p>
+          <p>Copyright © 2024 - All right reserved :) Aditya</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
           <a>
