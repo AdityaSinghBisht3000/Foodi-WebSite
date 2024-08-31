@@ -19,7 +19,6 @@ const UserProfile = () => {
   // console.log(image_hosting_key);
   const onSubmit = async (data) => {
     // console.log(data);
-
     const imageFile = { image: data.photoURL[0] };
     const hostingImg = await axiosPublic.post(image_hosting_api, imageFile, {
       headers: {
@@ -30,7 +29,7 @@ const UserProfile = () => {
     if (hostingImg.data.success) {
       const name = data.name;
       const photoURL = hostingImg.data.data.display_url;
-      // console.log(photoURL);
+      console.log(photoURL);
       // const photoURL = data.photoURL;
 
       try {
