@@ -18,7 +18,7 @@ const UserProfile = () => {
   const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
   // console.log(image_hosting_key);
   const onSubmit = async (data) => {
-    // console.log(data);
+    console.log(data);
     const imageFile = { image: data.photoURL[0] };
     const hostingImg = await axiosPublic.post(image_hosting_api, imageFile, {
       headers: {
