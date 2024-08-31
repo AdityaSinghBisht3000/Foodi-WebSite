@@ -20,11 +20,15 @@ const UserProfile = () => {
   const onSubmit = async (data) => {
     console.log(data);
     const imageFile = { image: data.photoURL[0] };
-    const hostingImg = await axiosPublic.post(image_hosting_api, imageFile, {
-      headers: {
-        "content-type": "multipart/form-data",
-      },
-    });
+    try {
+      const hostingImg = await axiosPublic.post(image_hosting_api, imageFile, {
+        headers: {
+          "content-type": "multipart/form-data",
+        },
+      });
+    } catch (error) {
+      console.log("Not Supprorting vercel!!");
+    }
 
     if (hostingImg.data.success) {
       const name = data.name;
